@@ -1,4 +1,4 @@
-import p5 from 'p5.js'
+import p5 from 'https://static.tttiny.com/static/js/p5.js'
 
 // TODO
 // Move animation into action
