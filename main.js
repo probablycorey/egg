@@ -227,6 +227,6 @@ p5.draw = () => {
 let instructions = () => {}
 
 export default (yourInstructions) => {
-  console.log('setting your instructions')
+  console.log('setting your instructions!')
   instructions = yourInstructions
 }
