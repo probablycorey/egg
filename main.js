@@ -206,8 +206,8 @@ p5.setup = () => {
   colorMode(HSL)
   egg = new Egg()
 
-  commands(egg)
-  setInterval(() => commands(egg), COMMAND_LENGTH_IN_MS * 3)
+  instructions(egg)
+  setInterval(() => instructions(egg), COMMAND_LENGTH_IN_MS * 3)
 }
 
 p5.draw = () => {
@@ -221,4 +221,8 @@ p5.draw = () => {
   egg.draw()
 }
 
-export default egg
+let instructions = () => {}
+
+export default (yourInstructions) => {
+  instructions = yourInstructions
+}

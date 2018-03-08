@@ -5,7 +5,7 @@
 # eggample
 
 ```js
-let commands = (egg) => {
+instructions(egg => {
   if (egg.needsToPoop()) {
     egg.poop()
     return
@@ -19,5 +19,5 @@ let commands = (egg) => {
       egg.eat()
     }
   }
-}
+})
 ```
