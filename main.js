@@ -207,7 +207,10 @@ p5.setup = () => {
   egg = new Egg()
 
   instructions(egg)
-  setInterval(() => instructions(egg), COMMAND_LENGTH_IN_MS * 3)
+  setInterval(() => {
+    console.log('instructions being called', instructions)
+    instructions(egg)
+  }, COMMAND_LENGTH_IN_MS * 3)
 }
 
 p5.draw = () => {
@@ -224,5 +227,6 @@ p5.draw = () => {
 let instructions = () => {}
 
 export default (yourInstructions) => {
+  console.log('setting your instructions')
   instructions = yourInstructions
 }
